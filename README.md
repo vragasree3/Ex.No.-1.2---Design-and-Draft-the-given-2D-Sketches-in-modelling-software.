@@ -10,33 +10,40 @@
  4. 2.5 Mbps or faster download; 500 Kbps or faster upload 
  
  ## PROCEDURE
- 1.	Open new file and then select sketch icon.
- 2.	Select the plane for sketching. 
- 3.	Use sketching features (line, circle, arc, rectangle, polygon, etc.,) to draw the given sketch.
+ 1. Drawing setup:
+             Create a new Fusion 360 design and start a sketch on the XY plane. Set the units to millimetres and use the origin as the centre of the diagram.
+
+2. Outer plate boundary:
+             Draw a centred rectangle approximately 178.77 mm wide as a guide for the plate outline. Sketch the sloping sides and rounded top and bottom edges; use tangent constraints where lines meet arcs.
  
- ![image](https://user-images.githubusercontent.com/113594316/198232594-2187c1c1-4e85-437f-99f7-263bb1a3e968.png)
- 4.	Use sketch modifying features (cut, trim, mirror, move, etc.,) to edit the sketch.
- 
- ![image](https://user-images.githubusercontent.com/113594316/198232771-48e6582d-4410-430a-a9d4-70e400255580.png)
- 
- 5.	Use inspect feature to measure the dimensions of sketch.
- 
- ![image](https://user-images.githubusercontent.com/113594316/198232845-1608e574-732c-44b2-9921-39e920b70e2e.png)
- 
- 6.	After finishing the sketch use finish sketch option to finalize the sketch.
- ![image](https://user-images.githubusercontent.com/113594316/198232907-8275f39c-9031-4cf4-b0c4-8eb568e477ab.png)
- 7.	After finishing the sketch switch to drawing mode to plot the sketch in ISO standard
- 
- ![image](https://user-images.githubusercontent.com/113594316/198232997-7172a35b-79a2-45e4-88a3-5e741b4d90ce.png)
- 
- ![image](https://user-images.githubusercontent.com/113594316/198233011-28615257-fc2b-4c81-852a-49722c948e07.png)
- 
- 
+3. Hole placement: 
+             Create four circles with a diameter of 30 mm, matching the four corner holes in the diagram. Position them symmetrically around the centre; use the drawing’s dimensions to set their spacing where the extension lines make the reference clear.   
+
+4. Centre feature:
+              Draw the central circle with a diameter of 32 mm at the sketch origin. Add two concentric circles around it to form the surrounding ring, sizing the outer circle to match the diagram. 
+
+
+5. Radial openings:
+                Draw one opening in the ring and use Sketch > Circular Pattern to repeat it around the centre. Set the pattern to six instances, evenly spaced, to match the six openings shown. 
+
+6. Sketch constraints:
+                Apply symmetry about the vertical and horizontal centre lines so corresponding features stay aligned. Use dimensions, tangent constraints, and equal constraints to control the sketch and keep repeated geometry consistent. 
+
+7. Finishing the sketch:
+                 Use Trim to remove extra lines and arcs after the outline, holes, and ring openings are in place. Check that the intended plate boundary is closed before selecting Finish Sketch.
+
+8. Extruding the model: 
+                 To turn the 2D sketch into a 3D part, select the plate profile and choose Solid > Create > Extrude. Enter the required thickness. 
+
+9. Dimension check:
+                  Check the sketch against the dimensions shown, including 178.77 mm, 140 mm, 120 mm, R20, Ø30, and Ø32. 
+
  ## SKETCH
  ![image](https://user-images.githubusercontent.com/113594316/198233336-dd9f5c19-481b-486a-928a-99c32a732f89.png)
 
  ## OUTPUT
- 
+ <img width="614" height="446" alt="image" src="https://github.com/user-attachments/assets/c7ed6a48-b34c-46a2-9585-36a286f11c6e" />
+
  
  ## RESULT
  Thus the given sketch is drawn and drafted using fusion 360 tool.
